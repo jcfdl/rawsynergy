@@ -1,0 +1,74 @@
+.main-navigation {
+	width: 100%;
+	height: 120px;
+	padding: 25px 35px;
+	overflow: hidden;
+}
+.main-navigation img,
+.contact-navigation img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.site-branding,
+#site-navigation,
+.contact-navigation {
+	float: left;
+	height: 100%;
+}
+.contact-navigation,
+.site-branding {
+	width: 15%;
+}
+#site-navigation {
+	width: 70%;
+	text-align: center;
+	line-height: 65px;
+}
+#site-navigation ul {
+	margin: 0 auto;
+	padding-inline-start: 0;
+}
+#site-navigation li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+#site-navigation li a ,
+#site-navigation li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+#site-navigation ul {
+	position: relative;
+}
+#site-navigation ul:before {
+	content: "";
+	display:block;
+	width: 25%;
+	height:1px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	/*z-index: -2;*/
+}
+#site-navigation ul:after {
+	content: "";
+	display:block;
+	width: 25%;
+	height:1px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	/*z-index: -2;*/
+}
+.contact-navigation {
+	text-align: right;
+	line-height: 65px;
+	color: #fff;
+}
+.contact-navigation .contact-number {
+	margin-left: 5px;
+	font-weight: bold;
+}

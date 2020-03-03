@@ -22,23 +22,38 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2-1.svg'?>">
-		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation">
-			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"> -->
-				<?php //esc_html_e( 'Primary Menu', 'rawsynergy' ); ?>
-			<!-- </button> -->
-			<?php
-			// wp_nav_menu( array(
-			// 	'theme_location' => 'menu-1',
-			// 	'menu_id'        => 'primary-menu',
-			// ) );
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="main-navigation mb-4">
+			<div class="site-branding">
+				<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2-1.svg'?>">
+			</div><!-- .site-branding -->
+			<div class="responsive-navigation nav-open">				
+			</div>
+			<nav id="site-navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+			<div class="contact-navigation">
+				<img src="<?= get_template_directory_uri() . '/Assets/Icons/phone.svg'?>">
+				<span class="contact-number">(08) 8263 0499</span>
+			</div>
+		</div><!-- .main-navigation -->
 		<div class="site-branding-big">
 			<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2.svg'?>">
 		</div>
 	</header><!-- #masthead -->
-
+	<div class="page-information">				
+		<?= get_post_meta(get_the_ID(), 'top_header', true); ?>
+		<?php if(!empty(get_post_meta(get_the_ID(), 'page_header', true))): ?>
+			<div class="page-header">
+				<?= get_post_meta(get_the_ID(), 'page_header', true); ?>
+			</div>
+			<div class="page-description">
+				<?= get_post_meta(get_the_ID(), 'page_description', true); ?>
+			</div>
+		<?php endif; ?>
+	</div>
 	<div id="content" class="site-content">
