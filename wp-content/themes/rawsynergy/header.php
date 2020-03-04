@@ -26,9 +26,10 @@
 			<div class="site-branding">
 				<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2-1.svg'?>">
 			</div><!-- .site-branding -->
-			<div class="responsive-navigation nav-open">				
+			<div class="responsive-navigation nav open">	
+				<img src="<?= get_template_directory_uri() . '/Assets/Icons/menu.svg'?>">							
 			</div>
-			<nav id="site-navigation">
+			<nav id="site-navigation" class="width-0">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
@@ -36,7 +37,7 @@
 					) );
 				?>
 			</nav><!-- #site-navigation -->
-			<div class="contact-navigation">
+			<div class="contact-navigation width-0">
 				<img src="<?= get_template_directory_uri() . '/Assets/Icons/phone.svg'?>">
 				<span class="contact-number">(08) 8263 0499</span>
 			</div>
