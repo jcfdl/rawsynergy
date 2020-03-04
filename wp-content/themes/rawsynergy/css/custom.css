@@ -29,7 +29,7 @@ body {
 	width: 50%;
 	margin: auto;
 }
-/*Article*/
+/*Services*/
 article .entry-title {
 	display: none;
 }
@@ -56,6 +56,89 @@ article .entry-title {
 	margin: 20px auto;
 	margin-bottom: 50px;
 	width: 60%;
+}
+/*Who We Are*/
+.who-we-are {
+	padding: 50px;
+	width: 100%;
+}
+.who-we-are .accordion {
+	width: 47%;
+	margin: auto;
+}
+.who-we-are .card-header {
+	background-color: initial;
+	border: 0;
+}
+.who-we-are .card {
+	border: 0;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0;
+}
+.who-we-are .card-header {
+	padding: 12px 20px 0 20px;
+}
+.who-we-are .card-body {
+	padding: 0;
+  font-size: 14px;
+  padding-left: 17.7%;
+}
+.who-we-are .card:last-child .card-body {	
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.who-we-are .card-body table td {
+	padding: 5px;
+}
+.who-we-are .card-body tr td:last-child {
+	text-align: right;
+}
+.who-we-are .fa {
+	float: left;
+	font-size: 45px;
+	width: 15%;
+}
+.who-we-are .btn-link {
+	padding: 0;
+	width: 85%;
+	position: relative;
+	white-space: normal;
+}
+.who-we-are .btn-link:hover,
+.who-we-are .btn-link {
+	color: #000;
+	text-decoration: none;
+}
+.who-we-are .btn-link.collapsed:after {
+	content: "\f067";
+	font-family: 'FontAwesome';
+}
+.who-we-are .btn-link:after {
+	content: "\f068";
+	font-family: 'FontAwesome';
+}
+.who-we-are .btn-link.collapsed:after,
+.who-we-are .btn-link:after {
+	font-size: 20px;
+	top: 10px;
+	right: 0;
+	position: absolute;
+}
+.who-we-are .title {
+	display: block;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: left;
+}
+.who-we-are p {
+	width: 85%;
+	margin: 0;
+}
+.who-we-are .subtitle {		
+	word-break: break-all;
+	text-align: left;
 }
 /*Location*/
 .site-location {
