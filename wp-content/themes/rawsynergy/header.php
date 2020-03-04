@@ -24,7 +24,9 @@
 	<header id="masthead" class="site-header">
 		<div class="main-navigation mb-4">
 			<div class="site-branding">
-				<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2-1.svg'?>">
+				<a href="/">
+					<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2-1.svg'?>">
+				</a>
 			</div><!-- .site-branding -->
 			<div class="responsive-navigation nav open">	
 				<img src="<?= get_template_directory_uri() . '/Assets/Icons/menu.svg'?>">							

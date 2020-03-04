@@ -1,5 +1,17 @@
 @media screen and (max-width: 575.98px) { 
-
+	.who-we-are {
+		padding: 20px;
+	}
+	.who-we-are .fa {
+		line-height: 2;
+		font-size: 20px !important;
+	}
+	.top-header .text-container {
+		padding: 10px;
+	}
+	.top-header .text-container .header {
+		font-size: 50px !important;
+	}
 }
 
 @media screen and (max-width: 767.98px) {
@@ -81,35 +93,100 @@
 	.site-branding-big {
 		padding-top: 	30px;
 	}
+	.top-header {
+		height: 400px;
+	}
 	.top-header-img,
 	.top-header-img-shadow {
 		width: 90%;
 		left: 5%;
 		top: -300px;
 	}	
+	.top-header-img-shadow {
+		height: 752px;
+	}
 	.top-header-content {
 		left: 0;
+		width: 60%;
+	}
+	.top-header .text-container .header {
+		font-size: 70px;
 	}
 	.top-header .text-container .header-cta {
-		font-size: 30px;
-    height: auto;
-    width: 145%;
-    left: -6px;
-	}
-	.top-header-content .text-container .text {
-		display: none;
-	}
-	.top-header-content .text-container .number {
+    display: none;
+	}	 
+	.top-header-number {
 		display: block;
+		position: absolute;
+		background: #b3871f;
+		color: #fff;
+		font-size: 40px;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.top-header-number img {
+		width: 40px;
+	}
+	.homepage-content,
+	.who-we-are .accordion,
+	.location-description-info {
+		width: 100%;
+	}
+	.who-we-are .fa {
+		font-size: 35px;
+		margin-right: 5px;
+		width: 10%;
+	}
+	.page-description {
+		width: 80%;
+	}
+	.location-description {
+		padding: 20px;
+		order: 1;
+	}
+	.location-img {
+		order: 2;
+		height: 400px;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-	
+	.top-header {
+		height: 450px;
+	}
+	.top-header-img-shadow {
+		height: 752px;
+	}
+	.top-header-content {
+		width: 350px;
+	}	
+	.top-header .text-container .header-cta {
+		font-size: 25px;
+	}
+	.top-header .text-container .header {
+		font-size: 70px;
+	}
+	.contact-navigation {
+		font-size: 15px;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-
+	.top-header {
+		height: 450px;
+	}
+	.top-header-img-shadow {
+		height: 752px;
+	}
+	.top-header-content {
+		width: 400px;
+	}	
+	.top-header .text-container .header {
+		font-size: 100px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
