@@ -29,6 +29,38 @@ body {
 	width: 50%;
 	margin: auto;
 }
+/*Homepage*/
+.homepage-content {
+	padding: 80px 50px 50px;
+	text-align: center;
+	width: 45%;
+  margin: auto;
+}
+.homepage-content h1 {
+	font-weight: bold;
+}
+.top-header {
+	background: #000;
+	position: relative;
+	height: 580px;
+}
+.top-header-content {
+	position: absolute;
+}
+.top-header-img {
+	width: 65%;
+	height: 850px;
+	margin: auto;
+	position: absolute;
+	top: -250PX;
+  left: 17.5%;
+  filter: grayscale(100%);
+  box-shadow: inset 200px -200px 200px rgba(0,0,0,0.6);
+	background: url('/wp-content/themes/rawsynergy/Assets/Images/girl-min.png');
+	background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: top center; 
+}
 /*Services*/
 article .entry-title {
 	display: none;

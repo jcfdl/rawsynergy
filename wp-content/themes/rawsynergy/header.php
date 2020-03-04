@@ -45,9 +45,9 @@
 			<img src="<?= get_template_directory_uri() . '/Assets/Icons/Layer 2.svg'?>">
 		</div>
 	</header><!-- #masthead -->
-	<div class="page-information">				
-		<?= get_post_meta(get_the_ID(), 'top_header', true); ?>
-		<?php if(!empty(get_post_meta(get_the_ID(), 'page_header', true))): ?>
+	<?= get_post_meta(get_the_ID(), 'top_header', true); ?>
+	<?php if(!empty(get_post_meta(get_the_ID(), 'page_header', true))): ?>
+		<div class="page-information">	
 			<div class="page-information-content">
 				<div class="page-header">
 					<?= get_post_meta(get_the_ID(), 'page_header', true); ?>
@@ -56,6 +56,6 @@
 					<?= get_post_meta(get_the_ID(), 'page_description', true); ?>
 				</div>
 			</div>
-		<?php endif; ?>
-	</div>
+		</div>
+	<?php endif; ?>
 	<div id="content" class="site-content">
