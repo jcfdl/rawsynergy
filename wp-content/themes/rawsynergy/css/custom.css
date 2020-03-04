@@ -44,22 +44,57 @@ body {
 	position: relative;
 	height: 580px;
 }
-.top-header-content {
-	position: absolute;
-}
 .top-header-img {
 	width: 65%;
-	height: 850px;
+	height: 670px;	
 	margin: auto;
 	position: absolute;
-	top: -250PX;
+	top: -250px;
   left: 17.5%;
   filter: grayscale(100%);
-  box-shadow: inset 200px -200px 200px rgba(0,0,0,0.6);
-	background: url('/wp-content/themes/rawsynergy/Assets/Images/girl-min.png');
-	background-size:     cover;                      /* <------ */
+	/*background: url('/wp-content/themes/rawsynergy/Assets/Images/girl-min.png');
+	background-size:     cover; 
   background-repeat:   no-repeat;
-  background-position: top center; 
+  background-position: top center; */
+}
+.top-header-img-shadow {
+	width: 65%;	
+	height: 872px;
+	position: absolute;
+	top: -250px;
+  left: 17.5%;
+  box-shadow: inset 200px -200px 200px rgba(0,0,0,0.6);
+}
+.top-header-content {
+	position: absolute;
+	width: 500px;	
+	top: -170px;
+  left: 90px;
+}
+.top-header .text-container {
+	border: 5px solid #fff;
+	position: relative;
+	padding: 30px;
+}
+.top-header .text-container .header {
+	font-size: 120px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+}
+.top-header .text-container .header-cta {
+	position: absolute;
+  background: #b3871f;
+  color: #fff;
+  width: 200px;
+  font-size: 30px;
+  padding: 5px 20px;
+  right: 30px;
+  bottom: -30px;
+  text-align: center;
+}
+.top-header .text-container .number {
+	display: none;
 }
 /*Services*/
 article .entry-title {
