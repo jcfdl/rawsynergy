@@ -29,6 +29,34 @@ body {
 	width: 50%;
 	margin: auto;
 }
+/*Article*/
+article .entry-title {
+	display: none;
+}
+.service-content {
+	width: 100%;
+	margin: 0;
+	padding: 50px;
+	text-align: center;
+}
+.service-img {
+	margin-bottom: 20px;
+}
+.service-content .fa {
+	font-size: 150px;
+}
+.service-content .name {
+	display: block;
+	font-weight: bold;
+}
+.service-content .title {
+	font-size: 15px;
+}
+.service-description {
+	margin: 20px auto;
+	margin-bottom: 50px;
+	width: 60%;
+}
 /*Location*/
 .site-location {
 	background: #000;
@@ -67,6 +95,9 @@ body {
 .location-description {
 	padding: 50px;
 }
+.location-description-info {
+	width: 30%;
+}
 .location-links {
 	padding-inline-start: 0;
 	border-bottom: 1px solid #fff;
@@ -84,6 +115,7 @@ body {
 }
 /*Footer*/
 footer {
+	border-top: 1px solid rgba(255, 255, 255, .5);
 	background: #000;
 	color: #fff;
 	padding: 5px;
