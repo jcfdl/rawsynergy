@@ -48,11 +48,13 @@
 	<div class="page-information">				
 		<?= get_post_meta(get_the_ID(), 'top_header', true); ?>
 		<?php if(!empty(get_post_meta(get_the_ID(), 'page_header', true))): ?>
-			<div class="page-header">
-				<?= get_post_meta(get_the_ID(), 'page_header', true); ?>
-			</div>
-			<div class="page-description">
-				<?= get_post_meta(get_the_ID(), 'page_description', true); ?>
+			<div class="page-information-content">
+				<div class="page-header">
+					<?= get_post_meta(get_the_ID(), 'page_header', true); ?>
+				</div>
+				<div class="page-description">
+					<?= get_post_meta(get_the_ID(), 'page_description', true); ?>
+				</div>
 			</div>
 		<?php endif; ?>
 	</div>
