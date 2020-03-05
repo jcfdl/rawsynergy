@@ -12,6 +12,9 @@
 	.top-header .text-container .header {
 		font-size: 50px !important;
 	}
+	#custom_html-4 {
+    font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 767.98px) {
@@ -84,9 +87,9 @@
 	}
 	#site-navigation ul {
 		position: absolute;
-	  top: 25%;
+	  top: 10%;
 	  width: 100%;
-	  margin-top: 30px;
+	  /*margin-top: 30px;*/
 	  font-size: 50px;
 	  line-height: 2;
 	}
@@ -174,6 +177,16 @@
 	}
 }
 
+@media screen and (min-width: 768px)  {
+	#custom_html-4,
+	#wpforms-widget-4 {
+		-webkit-box-flex: 0;
+	  -ms-flex: 0 0 50%;
+	  flex: 0 0 50%;
+	  max-width: 50%;
+	}
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 	.top-header {
 		height: 450px;
@@ -190,5 +203,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
+	#custom_html-4 .textwidget {
+		margin-top: 60px;
+	}
 }

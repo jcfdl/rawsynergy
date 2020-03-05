@@ -293,3 +293,41 @@ footer {
 .privacy-policy a:hover {
 	color: #fff;
 }
+.widget-area {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#custom_html-4,
+#wpforms-widget-4 {
+	padding: 50px;
+	position: relative;
+  width: 100%;	
+}
+#custom_html-4 {
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-size: 30px;
+}
+.wpforms-head-container {
+	text-align: center;
+	font-weight: bold;
+}
+.wpforms-form label {
+	font-size: 12px !important;
+	text-transform: uppercase !important;
+}
+.wpforms-submit-container {
+	text-align: right;
+}
+.wpforms-submit {
+	padding: 5px !important;
+  font-size: 15px !important;
+  width: 150px !important;
+  background: #b3871f !important;
+  color: #fff !important;
+}
+
